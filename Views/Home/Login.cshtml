@@ -1,0 +1,62 @@
+﻿@using CadastroUsuarioMVC.Models
+@using Microsoft.AspNetCore.Http
+@model Usuario
+@{
+
+    ViewData["Title"] = "Login";
+}
+
+<p id="msgConfirm">@ViewBag.Mensagem</p>
+
+
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sign</title>
+    <link rel="shortcut icon" href="fotos/favicon.icon" type="image/x-icon">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <div class="container-login">
+        <div class="img-box">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="content-box">
+            <div class="form-box">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-box">
+                        <span>Usuário</span>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-box">
+                        <span>Senha</span>
+                        <input type="password" placeholder="Senha">
+                    </div>
+
+                    <div class="remember">
+                        <label>
+                            <input type="checkbox" name="Remember me"> Lembrar me
+                        </label>
+                        <a href="#">Esqueceu a Senha? </a>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="submit" value="Entrar">
+                    </div>
+
+                    <div class="input-box">
+                        <p>Não tem uma Conta? <a href="#">Inscreva-se</a></p>
+                    </div>
+
+                </form>
+            
+
+        </div>
+    </div>
+</body>
+</html>
